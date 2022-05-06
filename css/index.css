@@ -1,0 +1,84 @@
+body {
+    background: linear-gradient(to right, rgb(70, 200, 218), rgb(228, 43, 218));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background: #fff;
+    width: 50%;
+    margin: 40px auto;
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: inset 3px 3px 3px 1px #ddd, inset -3px -3px 3px 1px #ddd, 0px 0px 0px 7px #fff;
+    position: relative;
+}
+
+.error404 {
+    font-size: 130px;
+    font-weight: 900;
+    color: transparent;
+}
+
+.errorcopy {
+    background: linear-gradient(-45deg, rgb(61, 221, 221), rgb(184, 7, 175));
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    width: 100%;
+    animation: gradient 6s linear infinite;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@media(max-width:500px) {
+    .errorcopy {
+        font-size: 100px;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 50% 0px;
+    }
+    25% {
+        background-position: 25% 0px;
+    }
+    50% {
+        background-position: 10% 0px;
+    }
+    75% {
+        background-position: 65% 0px;
+    }
+    100% {
+        background-position: 0px 0px;
+    }
+}
+
+.message-not-found {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.button-not-found {
+    background: #fff;
+    width: 140px;
+    padding: 8px;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-left: 15px;
+    color: rgb(7, 169, 209);
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 1px solid rgb(7, 169, 209);
+    transition: all .3s linear;
+}
+
+.button-not-found:hover {
+    color: #fff;
+    background: rgb(7, 169, 209);
+}
